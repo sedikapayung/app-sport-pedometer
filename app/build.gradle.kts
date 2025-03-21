@@ -5,7 +5,11 @@ plugins {
 
 android {
     namespace = "com.example.app_sport_pedometer"
-    compileSdk = 34
+    compileSdk = 35
+
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.example.app_sport_pedometer"
@@ -45,4 +49,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation (libs.androidx.viewpager2)
 }
